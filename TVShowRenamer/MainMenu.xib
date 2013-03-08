@@ -1694,7 +1694,6 @@
 							<string key="NSFrame">{{360, 1}, {110, 32}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="983850905">
@@ -4798,7 +4797,7 @@
 						<string key="previewRename:">id</string>
 						<string key="renameAllFiles:">id</string>
 						<string key="selectFiles:">id</string>
-						<string key="serieWasSelected:">id</string>
+						<string key="showWasSelected:">id</string>
 						<string key="updateSearch:">id</string>
 						<string key="updateSearchResult:">id</string>
 					</dictionary>
@@ -4819,8 +4818,8 @@
 							<string key="name">selectFiles:</string>
 							<string key="candidateClassName">id</string>
 						</object>
-						<object class="IBActionInfo" key="serieWasSelected:">
-							<string key="name">serieWasSelected:</string>
+						<object class="IBActionInfo" key="showWasSelected:">
+							<string key="name">showWasSelected:</string>
 							<string key="candidateClassName">id</string>
 						</object>
 						<object class="IBActionInfo" key="updateSearch:">
@@ -4840,7 +4839,7 @@
 						<string key="progress2">NSProgressIndicator</string>
 						<string key="searchField">NSTextField</string>
 						<string key="season">NSPopUpButton</string>
-						<string key="serie">NSPopUpButton</string>
+						<string key="show">NSPopUpButton</string>
 						<string key="textError">NSTextField</string>
 						<string key="window">NSWindow</string>
 					</dictionary>
@@ -4873,8 +4872,8 @@
 							<string key="name">season</string>
 							<string key="candidateClassName">NSPopUpButton</string>
 						</object>
-						<object class="IBToOneOutletInfo" key="serie">
-							<string key="name">serie</string>
+						<object class="IBToOneOutletInfo" key="show">
+							<string key="name">show</string>
 							<string key="candidateClassName">NSPopUpButton</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="textError">

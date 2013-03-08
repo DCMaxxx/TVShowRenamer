@@ -12,7 +12,7 @@
 /*
 ** Your TVDB API Key
 */
-#define TVDB_API_KEY @"3BE200955DE90566"
+#define TVDB_API_KEY @"XXXXXXXXXXXXXXXX"
 
 
 /*
