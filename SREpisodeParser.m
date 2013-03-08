@@ -15,14 +15,10 @@
     
     _isParsing = NO;
     _episodeName = [[NSMutableString alloc] init];
-                    
-    NSLog(@"URL : %@", url);
 
-       NSXMLParser * parser = [[NSXMLParser alloc] initWithContentsOfURL:url];
+    NSXMLParser * parser = [[NSXMLParser alloc] initWithContentsOfURL:url];
     [parser setDelegate:self];
     [parser parse];
-    
-    NSLog(@"Episode name : %@", _episodeName);
 
     return _episodeName;
 }

@@ -139,8 +139,8 @@
 		9C8CFC3016E9D9AF00BCFBD9 /* App Sources */ = {
 			isa = PBXGroup;
 			children = (
-				9C8CFC1B16E9D8E400BCFBD9 /* SRAppDelegate.m */,
 				9C8CFC1A16E9D8E400BCFBD9 /* SRAppDelegate.h */,
+				9C8CFC1B16E9D8E400BCFBD9 /* SRAppDelegate.m */,
 				9C8CFC1E16E9D8E400BCFBD9 /* SRRenamedTableView.h */,
 				9C8CFC1F16E9D8E400BCFBD9 /* SRRenamedTableView.m */,
 			);
@@ -362,6 +362,7 @@
 				9C8CFC1516E9D5F300BCFBD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
