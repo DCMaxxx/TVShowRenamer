@@ -1,0 +1,369 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C8CFBFA16E9D5F300BCFBD9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C8CFBF916E9D5F300BCFBD9 /* Cocoa.framework */; };
+		9C8CFC0416E9D5F300BCFBD9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C8CFC0216E9D5F300BCFBD9 /* InfoPlist.strings */; };
+		9C8CFC0616E9D5F300BCFBD9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8CFC0516E9D5F300BCFBD9 /* main.m */; };
+		9C8CFC1016E9D5F300BCFBD9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C8CFC0E16E9D5F300BCFBD9 /* MainMenu.xib */; };
+		9C8CFC1916E9D86A00BCFBD9 /* TVShowRenamer.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 9C8CFC1816E9D86A00BCFBD9 /* TVShowRenamer.iconset */; };
+		9C8CFC2516E9D8E400BCFBD9 /* SRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8CFC1B16E9D8E400BCFBD9 /* SRAppDelegate.m */; };
+		9C8CFC2616E9D8E400BCFBD9 /* SREpisodeParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8CFC1D16E9D8E400BCFBD9 /* SREpisodeParser.m */; };
+		9C8CFC2716E9D8E400BCFBD9 /* SRRenamedTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8CFC1F16E9D8E400BCFBD9 /* SRRenamedTableView.m */; };
+		9C8CFC2816E9D8E400BCFBD9 /* SRSerie.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8CFC2116E9D8E400BCFBD9 /* SRSerie.m */; };
+		9C8CFC2916E9D8E400BCFBD9 /* SRSerieParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8CFC2316E9D8E400BCFBD9 /* SRSerieParser.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9C8CFBF616E9D5F300BCFBD9 /* TVShowRenamer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVShowRenamer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C8CFBF916E9D5F300BCFBD9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		9C8CFBFC16E9D5F300BCFBD9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		9C8CFBFD16E9D5F300BCFBD9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		9C8CFBFE16E9D5F300BCFBD9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9C8CFC0116E9D5F300BCFBD9 /* TVShowRenamer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TVShowRenamer-Info.plist"; sourceTree = "<group>"; };
+		9C8CFC0316E9D5F300BCFBD9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9C8CFC0516E9D5F300BCFBD9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9C8CFC0716E9D5F300BCFBD9 /* TVShowRenamer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TVShowRenamer-Prefix.pch"; sourceTree = "<group>"; };
+		9C8CFC0F16E9D5F300BCFBD9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		9C8CFC1816E9D86A00BCFBD9 /* TVShowRenamer.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = TVShowRenamer.iconset; sourceTree = "<group>"; };
+		9C8CFC1A16E9D8E400BCFBD9 /* SRAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SRAppDelegate.h; path = ../SRAppDelegate.h; sourceTree = "<group>"; };
+		9C8CFC1B16E9D8E400BCFBD9 /* SRAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SRAppDelegate.m; path = ../SRAppDelegate.m; sourceTree = "<group>"; };
+		9C8CFC1C16E9D8E400BCFBD9 /* SREpisodeParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SREpisodeParser.h; path = ../SREpisodeParser.h; sourceTree = "<group>"; };
+		9C8CFC1D16E9D8E400BCFBD9 /* SREpisodeParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SREpisodeParser.m; path = ../SREpisodeParser.m; sourceTree = "<group>"; };
+		9C8CFC1E16E9D8E400BCFBD9 /* SRRenamedTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SRRenamedTableView.h; path = ../SRRenamedTableView.h; sourceTree = "<group>"; };
+		9C8CFC1F16E9D8E400BCFBD9 /* SRRenamedTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SRRenamedTableView.m; path = ../SRRenamedTableView.m; sourceTree = "<group>"; };
+		9C8CFC2016E9D8E400BCFBD9 /* SRSerie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SRSerie.h; path = ../SRSerie.h; sourceTree = "<group>"; };
+		9C8CFC2116E9D8E400BCFBD9 /* SRSerie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SRSerie.m; path = ../SRSerie.m; sourceTree = "<group>"; };
+		9C8CFC2216E9D8E400BCFBD9 /* SRSerieParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SRSerieParser.h; path = ../SRSerieParser.h; sourceTree = "<group>"; };
+		9C8CFC2316E9D8E400BCFBD9 /* SRSerieParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SRSerieParser.m; path = ../SRSerieParser.m; sourceTree = "<group>"; };
+		9C8CFC2416E9D8E400BCFBD9 /* TVDBSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVDBSettings.h; path = ../TVDBSettings.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C8CFBF316E9D5F300BCFBD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C8CFBFA16E9D5F300BCFBD9 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9C8CFBED16E9D5F300BCFBD9 = {
+			isa = PBXGroup;
+			children = (
+				9C8CFBFF16E9D5F300BCFBD9 /* TVShowRenamer */,
+				9C8CFBF816E9D5F300BCFBD9 /* Frameworks */,
+				9C8CFBF716E9D5F300BCFBD9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9C8CFBF716E9D5F300BCFBD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C8CFBF616E9D5F300BCFBD9 /* TVShowRenamer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C8CFBF816E9D5F300BCFBD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C8CFBF916E9D5F300BCFBD9 /* Cocoa.framework */,
+				9C8CFBFB16E9D5F300BCFBD9 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C8CFBFB16E9D5F300BCFBD9 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C8CFBFC16E9D5F300BCFBD9 /* AppKit.framework */,
+				9C8CFBFD16E9D5F300BCFBD9 /* CoreData.framework */,
+				9C8CFBFE16E9D5F300BCFBD9 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		9C8CFBFF16E9D5F300BCFBD9 /* TVShowRenamer */ = {
+			isa = PBXGroup;
+			children = (
+				9C8CFC2E16E9D97400BCFBD9 /* TVDBParser */,
+				9C8CFC2F16E9D98800BCFBD9 /* TVDBObjects */,
+				9C8CFC3016E9D9AF00BCFBD9 /* App Sources */,
+				9C8CFC3116E9D9DC00BCFBD9 /* Other Sources */,
+				9C8CFC3216E9D9FF00BCFBD9 /* Views */,
+				9C8CFC0016E9D5F300BCFBD9 /* Supporting Files */,
+			);
+			path = TVShowRenamer;
+			sourceTree = "<group>";
+		};
+		9C8CFC0016E9D5F300BCFBD9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C8CFC1816E9D86A00BCFBD9 /* TVShowRenamer.iconset */,
+				9C8CFC0116E9D5F300BCFBD9 /* TVShowRenamer-Info.plist */,
+				9C8CFC0216E9D5F300BCFBD9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9C8CFC2E16E9D97400BCFBD9 /* TVDBParser */ = {
+			isa = PBXGroup;
+			children = (
+				9C8CFC2416E9D8E400BCFBD9 /* TVDBSettings.h */,
+				9C8CFC1C16E9D8E400BCFBD9 /* SREpisodeParser.h */,
+				9C8CFC1D16E9D8E400BCFBD9 /* SREpisodeParser.m */,
+				9C8CFC2216E9D8E400BCFBD9 /* SRSerieParser.h */,
+				9C8CFC2316E9D8E400BCFBD9 /* SRSerieParser.m */,
+			);
+			name = TVDBParser;
+			sourceTree = "<group>";
+		};
+		9C8CFC2F16E9D98800BCFBD9 /* TVDBObjects */ = {
+			isa = PBXGroup;
+			children = (
+				9C8CFC2016E9D8E400BCFBD9 /* SRSerie.h */,
+				9C8CFC2116E9D8E400BCFBD9 /* SRSerie.m */,
+			);
+			name = TVDBObjects;
+			sourceTree = "<group>";
+		};
+		9C8CFC3016E9D9AF00BCFBD9 /* App Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9C8CFC1B16E9D8E400BCFBD9 /* SRAppDelegate.m */,
+				9C8CFC1A16E9D8E400BCFBD9 /* SRAppDelegate.h */,
+				9C8CFC1E16E9D8E400BCFBD9 /* SRRenamedTableView.h */,
+				9C8CFC1F16E9D8E400BCFBD9 /* SRRenamedTableView.m */,
+			);
+			name = "App Sources";
+			sourceTree = "<group>";
+		};
+		9C8CFC3116E9D9DC00BCFBD9 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9C8CFC0516E9D5F300BCFBD9 /* main.m */,
+				9C8CFC0716E9D5F300BCFBD9 /* TVShowRenamer-Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		9C8CFC3216E9D9FF00BCFBD9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9C8CFC0E16E9D5F300BCFBD9 /* MainMenu.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9C8CFBF516E9D5F300BCFBD9 /* TVShowRenamer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C8CFC1316E9D5F300BCFBD9 /* Build configuration list for PBXNativeTarget "TVShowRenamer" */;
+			buildPhases = (
+				9C8CFBF216E9D5F300BCFBD9 /* Sources */,
+				9C8CFBF316E9D5F300BCFBD9 /* Frameworks */,
+				9C8CFBF416E9D5F300BCFBD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TVShowRenamer;
+			productName = TVShowRenamer;
+			productReference = 9C8CFBF616E9D5F300BCFBD9 /* TVShowRenamer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9C8CFBEE16E9D5F300BCFBD9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SR;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Maxime de Chalendar";
+			};
+			buildConfigurationList = 9C8CFBF116E9D5F300BCFBD9 /* Build configuration list for PBXProject "TVShowRenamer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9C8CFBED16E9D5F300BCFBD9;
+			productRefGroup = 9C8CFBF716E9D5F300BCFBD9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C8CFBF516E9D5F300BCFBD9 /* TVShowRenamer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C8CFBF416E9D5F300BCFBD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C8CFC0416E9D5F300BCFBD9 /* InfoPlist.strings in Resources */,
+				9C8CFC1016E9D5F300BCFBD9 /* MainMenu.xib in Resources */,
+				9C8CFC1916E9D86A00BCFBD9 /* TVShowRenamer.iconset in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C8CFBF216E9D5F300BCFBD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C8CFC0616E9D5F300BCFBD9 /* main.m in Sources */,
+				9C8CFC2516E9D8E400BCFBD9 /* SRAppDelegate.m in Sources */,
+				9C8CFC2616E9D8E400BCFBD9 /* SREpisodeParser.m in Sources */,
+				9C8CFC2716E9D8E400BCFBD9 /* SRRenamedTableView.m in Sources */,
+				9C8CFC2816E9D8E400BCFBD9 /* SRSerie.m in Sources */,
+				9C8CFC2916E9D8E400BCFBD9 /* SRSerieParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9C8CFC0216E9D5F300BCFBD9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C8CFC0316E9D5F300BCFBD9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9C8CFC0E16E9D5F300BCFBD9 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C8CFC0F16E9D5F300BCFBD9 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9C8CFC1116E9D5F300BCFBD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9C8CFC1216E9D5F300BCFBD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9C8CFC1416E9D5F300BCFBD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TVShowRenamer/TVShowRenamer-Prefix.pch";
+				INFOPLIST_FILE = "TVShowRenamer/TVShowRenamer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9C8CFC1516E9D5F300BCFBD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TVShowRenamer/TVShowRenamer-Prefix.pch";
+				INFOPLIST_FILE = "TVShowRenamer/TVShowRenamer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C8CFBF116E9D5F300BCFBD9 /* Build configuration list for PBXProject "TVShowRenamer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C8CFC1116E9D5F300BCFBD9 /* Debug */,
+				9C8CFC1216E9D5F300BCFBD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C8CFC1316E9D5F300BCFBD9 /* Build configuration list for PBXNativeTarget "TVShowRenamer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C8CFC1416E9D5F300BCFBD9 /* Debug */,
+				9C8CFC1516E9D5F300BCFBD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9C8CFBEE16E9D5F300BCFBD9 /* Project object */;
+}
