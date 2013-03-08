@@ -27,7 +27,7 @@ You'll need to :
 - Select the language you want, from the drop down list. This will be the language used when searching episodes names. (Some shows may have dozens of languages, other might only have one),
 - Select the season you want, from the drop down list,
 - Choose your name format, or create your own one, using this four variables :
-  - $serie : the name of the show,
+  - $show : the name of the show,
   - $episode : the name of the episode,
   - #season : the number of the season, as a two-digit number,
   - #episode : the number of the episode,
