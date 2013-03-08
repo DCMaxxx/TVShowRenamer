@@ -1,6 +1,6 @@
 //
-//  SRSerie.h
-//  SerieRenamer
+//  SRShow.h
+//  TVShowRenamer
 //
 //  Created by Maxime de Chalendar on 27/11/12.
 //  Copyright (c) 2012 Maxime de Chalendar. All rights reserved.
@@ -12,7 +12,7 @@
 #define GET_BANNER_FORMAT(name) @"%@/%@", @"http://thetvdb.com/banners/", name
 #define GET_SEASON_FORMAT(season) @"http://www.thetvdb.com/data/series/%zu/default/%zu/1/%@.xml", _tvdbId, season, [_language objectAtIndex:0]
 
-@interface SRSerie : NSObject {
+@interface SRShow : NSObject {
     NSInteger _numberOfSeasons;
 }
 

@@ -1,6 +1,6 @@
 //
 //  SREpisodeParser.m
-//  SerieRenamer
+//  TVShowRenamer
 //
 //  Created by Maxime de Chalendar on 30/11/12.
 //  Copyright (c) 2012 Maxime de Chalendar. All rights reserved.
@@ -10,8 +10,8 @@
 
 @implementation SREpisodeParser
 
-- (NSString *)parseEpisodeOfSerie:(NSInteger)serieId Season:(NSInteger)seasonIdx Episode:(NSInteger)episodeIdx andLanguage:(NSString *)language {
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:GET_EPISODE_URL_FORMAT(serieId, seasonIdx, episodeIdx, language)]];
+- (NSString *)parseEpisodeOfShow:(NSInteger)showId Season:(NSInteger)seasonIdx Episode:(NSInteger)episodeIdx andLanguage:(NSString *)language {
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:GET_EPISODE_URL_FORMAT(showId, seasonIdx, episodeIdx, language)]];
     
     _isParsing = NO;
     _episodeName = [[NSMutableString alloc] init];

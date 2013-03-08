@@ -1,6 +1,6 @@
 //
 //  SRAppDelegate.m
-//  SerieRenamer
+//  TVShowRenamer
 //
 //  Created by Maxime de Chalendar on 26/11/12.
 //  Copyright (c) 2012 Maxime de Chalendar. All rights reserved.
@@ -17,8 +17,8 @@
     
     [searchField becomeFirstResponder];
     
-    sp = [[SRSerieParser alloc] init];
-    currentSeries = nil;
+    sp = [[SRShowParser alloc] init];
+    currentShows = nil;
 
     renamedTableViewDelegate = [[SRRenamedTableView alloc] init];
     [files setDataSource:renamedTableViewDelegate];
@@ -27,41 +27,41 @@
 - (IBAction)updateSearch:(id)sender {
     [progress startAnimation:self];
 
-    currentSeries = [sp getSeriesIdsWithName:[searchField stringValue] Language:ALL_LANGUAGES_STRING andMax:-1];
+    currentShows = [sp getShowsIdsWithName:[searchField stringValue] Language:ALL_LANGUAGES_STRING andMax:-1];
     [self updateSearchResult:nil];
-    [self serieWasSelected:nil];
+    [self showWasSelected:nil];
     
     [progress stopAnimation:self];
 }
 
-- (IBAction)serieWasSelected:(id)sender {
+- (IBAction)showWasSelected:(id)sender {
     [season removeAllItems];
     [season addItemWithTitle:@"Season"];
     [language removeAllItems];
     [language addItemWithTitle:@"Language"];
-    if ([serie indexOfSelectedItem] == 0) {
-        currentSerie = nil;
+    if ([show indexOfSelectedItem] == 0) {
+        currentShow = nil;
         return ;
     }
     
     [progress startAnimation:self];
 
-    currentSerie = [currentSeries objectAtIndex:[serie indexOfSelectedItem] - 1];
-    NSInteger nbSeasons = [currentSerie countSeason];
+    currentShow = [currentShows objectAtIndex:[show indexOfSelectedItem] - 1];
+    NSInteger nbSeasons = [currentShow countSeason];
     
     for (NSInteger i = 0; i < nbSeasons; ++i)
         [season addItemWithTitle:[NSString stringWithFormat:@"%zu", i + 1]];
-    for (NSString *tmpLanguage in [currentSerie language])
+    for (NSString *tmpLanguage in [currentShow language])
         [language addItemWithTitle:tmpLanguage];
 
     [progress stopAnimation:self];
 }
 
 - (IBAction)updateSearchResult:(id)sender {
-    [serie removeAllItems];
-    [serie addItemWithTitle:@"Serie"];
-    for (SRSerie * tmpSerie in currentSeries) {
-        [serie addItemWithTitle:[tmpSerie name]];
+    [show removeAllItems];
+    [show addItemWithTitle:@"Serie"];
+    for (SRShow * tmpShow in currentShows) {
+        [show addItemWithTitle:[tmpShow name]];
     }
 }
 
@@ -88,7 +88,7 @@
 }
 
 - (IBAction)previewRename:(id)sender {
-    if (!currentSerie || ![season indexOfSelectedItem] || ![language indexOfSelectedItem] || ![[format stringValue] length] ||
+    if (!currentShow || ![season indexOfSelectedItem] || ![language indexOfSelectedItem] || ![[format stringValue] length] ||
         ![[renamedTableViewDelegate allFiles] count]) {
         [textError setTextColor:[NSColor redColor]];
         return ;
@@ -98,13 +98,13 @@
     
     [progress2 startAnimation:self];
     
-    NSInteger serieId = [currentSerie tvdbId];
+    NSInteger showId = [currentShow tvdbId];
     NSInteger seasonIdx = [season indexOfSelectedItem];
     NSString *currentLanguage = [[language selectedItem] title];
 
     int i = 0;
     for (NSMutableDictionary *file in [renamedTableViewDelegate allFiles]) {
-        NSString * episode = [ep parseEpisodeOfSerie:serieId Season:seasonIdx Episode:++i andLanguage:currentLanguage];
+        NSString * episode = [ep parseEpisodeOfShow:showId Season:seasonIdx Episode:++i andLanguage:currentLanguage];
         if (episode == nil) {
             [file setObject:[self parseWithName:@"Warning : Unknown episode !" andNumber:i andExtension:[[file objectForKey:@"Old name"] pathExtension]] forKey:@"New name"];
         } else {
@@ -148,14 +148,14 @@
 }
 
 - (NSString *)parseWithName :(NSString *)name andNumber:(NSInteger)number andExtension:(NSString *)ext {
-    NSString * serieName = [[serie selectedItem] title];
+    NSString * showName = [[show selectedItem] title];
     NSInteger seasonIdx = [season indexOfSelectedItem];
     
     NSString *formatStr = [NSString stringWithString:[format stringValue]];
     
     NSError *error = NULL;
-    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"\\$serie" options:NSRegularExpressionCaseInsensitive error:&error];
-    formatStr = [regex stringByReplacingMatchesInString:formatStr options:0 range:NSMakeRange(0, [formatStr length]) withTemplate:serieName];
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"\\$show" options:NSRegularExpressionCaseInsensitive error:&error];
+    formatStr = [regex stringByReplacingMatchesInString:formatStr options:0 range:NSMakeRange(0, [formatStr length]) withTemplate:showName];
     regex = [NSRegularExpression regularExpressionWithPattern:@"\\$episode" options:NSRegularExpressionCaseInsensitive error:&error];
     formatStr = [regex stringByReplacingMatchesInString:formatStr options:0 range:NSMakeRange(0, [formatStr length]) withTemplate:name];
     regex = [NSRegularExpression regularExpressionWithPattern:@"#season" options:NSRegularExpressionCaseInsensitive error:&error];

@@ -1,18 +1,18 @@
 //
-//  TVDBParsingStrings.h
-//  SerieRenamer
+//  TVDBSettings.h
+//  TVShowRenamer
 //
 //  Created by Maxime de Chalendar on 30/11/12.
 //  Copyright (c) 2012 Maxime de Chalendar. All rights reserved.
 //
 
-#ifndef SerieRenamer_TVDBParsingStrings_h
-#define SerieRenamer_TVDBParsingStrings_h
+#ifndef TVShowRenamer_TVDBSettings_h
+#define TVShowRenamer_TVDBSettings_h
 
 /*
 ** Your TVDB API Key
 */
-#define TVDB_API_KEY @"XXXXXXXXXXXXXXXX"
+#define TVDB_API_KEY @"3BE200955DE90566"
 
 
 /*
@@ -22,22 +22,22 @@
 /*
 ** The XML ID key while parsing a serie
 */
-#define SERIE_ID_STRING @"id"
+#define SHOW_ID_STRING @"id"
 
 /*
 ** The XML language key while parsing a serie
 */
-#define SERIE_LANGUAGE_STRING @"language"
+#define SHOW_LANGUAGE_STRING @"language"
 
 /*
 ** The XML name key while parsing a serie
 */
-#define SERIE_NAME_STRING @"SeriesName"
+#define SHOW_NAME_STRING @"SeriesName"
 
 /*
 ** The end tag while parsing a serie
 */
-#define SERIE_END_STRING @"Series"
+#define SHOW_END_STRING @"Series"
 
 /*
 ** The url parameter value for all languages

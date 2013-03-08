@@ -1,19 +1,19 @@
 //
-//  SRSerie.m
-//  SerieRenamer
+//  SRShow.m
+//  TVShowRenamer
 //
 //  Created by Maxime de Chalendar on 27/11/12.
 //  Copyright (c) 2012 Maxime de Chalendar. All rights reserved.
 //
 
-#import "SRSerie.h"
+#import "SRShow.h"
 
-@implementation SRSerie
+@implementation SRShow
 
 - (void) fillWithDictionnary :(NSDictionary *)dic {
-    _name =         [dic objectForKey:SERIE_NAME_STRING];
-    _language =     [NSArray arrayWithObject:[dic objectForKey:SERIE_LANGUAGE_STRING]];
-    _tvdbId =       [[[dic objectForKey:SERIE_ID_STRING] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] integerValue];
+    _name =         [dic objectForKey:SHOW_NAME_STRING];
+    _language =     [NSArray arrayWithObject:[dic objectForKey:SHOW_LANGUAGE_STRING]];
+    _tvdbId =       [[[dic objectForKey:SHOW_ID_STRING] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] integerValue];
 }
 
 - (void) addLanguage:(NSString *)language {

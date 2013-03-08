@@ -7,19 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C07184016E9E40F001B411E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C07183F16E9E40F001B411E /* MainMenu.xib */; };
 		9C8CFBFA16E9D5F300BCFBD9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C8CFBF916E9D5F300BCFBD9 /* Cocoa.framework */; };
 		9C8CFC0416E9D5F300BCFBD9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C8CFC0216E9D5F300BCFBD9 /* InfoPlist.strings */; };
 		9C8CFC0616E9D5F300BCFBD9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8CFC0516E9D5F300BCFBD9 /* main.m */; };
-		9C8CFC1016E9D5F300BCFBD9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C8CFC0E16E9D5F300BCFBD9 /* MainMenu.xib */; };
 		9C8CFC1916E9D86A00BCFBD9 /* TVShowRenamer.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 9C8CFC1816E9D86A00BCFBD9 /* TVShowRenamer.iconset */; };
 		9C8CFC2516E9D8E400BCFBD9 /* SRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8CFC1B16E9D8E400BCFBD9 /* SRAppDelegate.m */; };
 		9C8CFC2616E9D8E400BCFBD9 /* SREpisodeParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8CFC1D16E9D8E400BCFBD9 /* SREpisodeParser.m */; };
 		9C8CFC2716E9D8E400BCFBD9 /* SRRenamedTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8CFC1F16E9D8E400BCFBD9 /* SRRenamedTableView.m */; };
-		9C8CFC2816E9D8E400BCFBD9 /* SRSerie.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8CFC2116E9D8E400BCFBD9 /* SRSerie.m */; };
-		9C8CFC2916E9D8E400BCFBD9 /* SRSerieParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8CFC2316E9D8E400BCFBD9 /* SRSerieParser.m */; };
+		9C8CFC2816E9D8E400BCFBD9 /* SRShow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8CFC2116E9D8E400BCFBD9 /* SRShow.m */; };
+		9C8CFC2916E9D8E400BCFBD9 /* SRShowParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8CFC2316E9D8E400BCFBD9 /* SRShowParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9C07183F16E9E40F001B411E /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		9C8CFBF616E9D5F300BCFBD9 /* TVShowRenamer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVShowRenamer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C8CFBF916E9D5F300BCFBD9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		9C8CFBFC16E9D5F300BCFBD9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -29,7 +30,6 @@
 		9C8CFC0316E9D5F300BCFBD9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9C8CFC0516E9D5F300BCFBD9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9C8CFC0716E9D5F300BCFBD9 /* TVShowRenamer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TVShowRenamer-Prefix.pch"; sourceTree = "<group>"; };
-		9C8CFC0F16E9D5F300BCFBD9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		9C8CFC1816E9D86A00BCFBD9 /* TVShowRenamer.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = TVShowRenamer.iconset; sourceTree = "<group>"; };
 		9C8CFC1A16E9D8E400BCFBD9 /* SRAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SRAppDelegate.h; path = ../SRAppDelegate.h; sourceTree = "<group>"; };
 		9C8CFC1B16E9D8E400BCFBD9 /* SRAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SRAppDelegate.m; path = ../SRAppDelegate.m; sourceTree = "<group>"; };
@@ -37,10 +37,10 @@
 		9C8CFC1D16E9D8E400BCFBD9 /* SREpisodeParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SREpisodeParser.m; path = ../SREpisodeParser.m; sourceTree = "<group>"; };
 		9C8CFC1E16E9D8E400BCFBD9 /* SRRenamedTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SRRenamedTableView.h; path = ../SRRenamedTableView.h; sourceTree = "<group>"; };
 		9C8CFC1F16E9D8E400BCFBD9 /* SRRenamedTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SRRenamedTableView.m; path = ../SRRenamedTableView.m; sourceTree = "<group>"; };
-		9C8CFC2016E9D8E400BCFBD9 /* SRSerie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SRSerie.h; path = ../SRSerie.h; sourceTree = "<group>"; };
-		9C8CFC2116E9D8E400BCFBD9 /* SRSerie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SRSerie.m; path = ../SRSerie.m; sourceTree = "<group>"; };
-		9C8CFC2216E9D8E400BCFBD9 /* SRSerieParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SRSerieParser.h; path = ../SRSerieParser.h; sourceTree = "<group>"; };
-		9C8CFC2316E9D8E400BCFBD9 /* SRSerieParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SRSerieParser.m; path = ../SRSerieParser.m; sourceTree = "<group>"; };
+		9C8CFC2016E9D8E400BCFBD9 /* SRShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SRShow.h; path = ../SRShow.h; sourceTree = "<group>"; };
+		9C8CFC2116E9D8E400BCFBD9 /* SRShow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SRShow.m; path = ../SRShow.m; sourceTree = "<group>"; };
+		9C8CFC2216E9D8E400BCFBD9 /* SRShowParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SRShowParser.h; path = ../SRShowParser.h; sourceTree = "<group>"; };
+		9C8CFC2316E9D8E400BCFBD9 /* SRShowParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SRShowParser.m; path = ../SRShowParser.m; sourceTree = "<group>"; };
 		9C8CFC2416E9D8E400BCFBD9 /* TVDBSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVDBSettings.h; path = ../TVDBSettings.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,8 +121,8 @@
 				9C8CFC2416E9D8E400BCFBD9 /* TVDBSettings.h */,
 				9C8CFC1C16E9D8E400BCFBD9 /* SREpisodeParser.h */,
 				9C8CFC1D16E9D8E400BCFBD9 /* SREpisodeParser.m */,
-				9C8CFC2216E9D8E400BCFBD9 /* SRSerieParser.h */,
-				9C8CFC2316E9D8E400BCFBD9 /* SRSerieParser.m */,
+				9C8CFC2216E9D8E400BCFBD9 /* SRShowParser.h */,
+				9C8CFC2316E9D8E400BCFBD9 /* SRShowParser.m */,
 			);
 			name = TVDBParser;
 			sourceTree = "<group>";
@@ -130,8 +130,8 @@
 		9C8CFC2F16E9D98800BCFBD9 /* TVDBObjects */ = {
 			isa = PBXGroup;
 			children = (
-				9C8CFC2016E9D8E400BCFBD9 /* SRSerie.h */,
-				9C8CFC2116E9D8E400BCFBD9 /* SRSerie.m */,
+				9C8CFC2016E9D8E400BCFBD9 /* SRShow.h */,
+				9C8CFC2116E9D8E400BCFBD9 /* SRShow.m */,
 			);
 			name = TVDBObjects;
 			sourceTree = "<group>";
@@ -159,7 +159,7 @@
 		9C8CFC3216E9D9FF00BCFBD9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9C8CFC0E16E9D5F300BCFBD9 /* MainMenu.xib */,
+				9C07183F16E9E40F001B411E /* MainMenu.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -217,8 +217,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C8CFC0416E9D5F300BCFBD9 /* InfoPlist.strings in Resources */,
-				9C8CFC1016E9D5F300BCFBD9 /* MainMenu.xib in Resources */,
 				9C8CFC1916E9D86A00BCFBD9 /* TVShowRenamer.iconset in Resources */,
+				9C07184016E9E40F001B411E /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,8 +233,8 @@
 				9C8CFC2516E9D8E400BCFBD9 /* SRAppDelegate.m in Sources */,
 				9C8CFC2616E9D8E400BCFBD9 /* SREpisodeParser.m in Sources */,
 				9C8CFC2716E9D8E400BCFBD9 /* SRRenamedTableView.m in Sources */,
-				9C8CFC2816E9D8E400BCFBD9 /* SRSerie.m in Sources */,
-				9C8CFC2916E9D8E400BCFBD9 /* SRSerieParser.m in Sources */,
+				9C8CFC2816E9D8E400BCFBD9 /* SRShow.m in Sources */,
+				9C8CFC2916E9D8E400BCFBD9 /* SRShowParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,14 +247,6 @@
 				9C8CFC0316E9D5F300BCFBD9 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		9C8CFC0E16E9D5F300BCFBD9 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9C8CFC0F16E9D5F300BCFBD9 /* en */,
-			);
-			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

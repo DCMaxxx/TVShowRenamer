@@ -1,13 +1,13 @@
 //
 //  SRAppDelegate.h
-//  SerieRenamer
+//  TVShowRenamer
 //
 //  Created by Maxime de Chalendar on 26/11/12.
 //  Copyright (c) 2012 Maxime de Chalendar. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>
-#import "SRSerieParser.h"
+#import "SRShowParser.h"
 #import "SREpisodeParser.h"
 #import "SRRenamedTableView.h"
 
@@ -16,7 +16,7 @@
     IBOutlet NSProgressIndicator *progress2;
     
     IBOutlet NSTextField *searchField;
-    IBOutlet NSPopUpButton *serie;
+    IBOutlet NSPopUpButton *show;
     IBOutlet NSPopUpButton *language;
     IBOutlet NSPopUpButton *season;
     
@@ -27,9 +27,9 @@
     IBOutlet NSTableView *files;
     SRRenamedTableView *renamedTableViewDelegate;
     
-    SRSerieParser * sp;
-    NSArray *currentSeries;
-    SRSerie *currentSerie;
+    SRShowParser * sp;
+    NSArray *currentShows;
+    SRShow *currentShow;
     
     SREpisodeParser *ep;
 }
@@ -37,7 +37,7 @@
 @property (assign) IBOutlet NSWindow *window;
 
 - (IBAction)updateSearch:(id)sender;
-- (IBAction)serieWasSelected:(id)sender;
+- (IBAction)showWasSelected:(id)sender;
 - (IBAction)updateSearchResult:(id)sender;
 - (IBAction)selectFiles:(id)sender;
 - (IBAction)changeSeason:(id)sender;
