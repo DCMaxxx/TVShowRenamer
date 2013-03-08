@@ -27,14 +27,14 @@ You'll need to :
 - Select the language you want, from the drop down list. This will be the language used when searching episodes names. (Some shows may have dozens of languages, other might only have one),
 - Select the season you want, from the drop down list,
 - Choose your name format, or create your own one, using this four variables :
-  - $show : the name of the show,
-  - $episode : the name of the episode,
-  - #season : the number of the season, as a two-digit number,
-  - #episode : the number of the episode,
-- Select the files you want to rename
+  - $show : the show's name,
+  - $episode : the episode's name,
+  - #season : the season's number, as a two-digit number,
+  - #episode : the episode's number, as a two-digit number,
+- Select the files you want to rename,
 - Hit preview if you want a preview, else hit rename to rename all episodes according to format.
 
-Your are adviced to preview first, just in case : if TheTVDB is down, a request fail, etc.
+Your are adviced to preview first, just in case : if TheTVDB is down, a request fails, etc.
 
 Contact
 -------------
